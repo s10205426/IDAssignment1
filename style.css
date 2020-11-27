@@ -374,10 +374,11 @@ h1 {
   font-size: 50px;
 }
 
-.about_me_style {
+h2 {
+  color: whitesmoke;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 50px;
 }
 
 li, a, button {
@@ -429,7 +430,7 @@ ul{list-style: none;} /* To remove the dot */
   margin-right: 125px;
   margin-left: 125px;
   margin-bottom: 100px;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -440,20 +441,37 @@ ul{list-style: none;} /* To remove the dot */
   margin-right: 125px;
   margin-left: 125px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.flex_container3 { /* To order 'Skills' tab */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 225px;
+  margin-left: 225px;
+  margin-bottom: 30px;
   margin-top: 20px;
   text-align: center;
 }
 
 .flex_item {
   margin-top: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
   margin: 10px;
   font-size: 20px;
   text-align: center;
 }
 
 .flex_item2 {
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex_item3 {
   margin-top: 40px;
   margin-right: 70px;
   margin-left: 70px;
@@ -494,7 +512,7 @@ hr.border { /* border */
   }
 }
 @media only screen and (max-width: 576px) { /* fit mobile devices */
-  .flex_container {
+  .flex_container { /* To order 'About Me' tab */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,7 +537,21 @@ hr.border { /* border */
 }
 
 @media only screen and (max-width: 576px) { /* fit mobile devices */
-  .nav_links li {
+  .flex_container3 { /* To order 'Skills' tab */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) { /* fit mobile devices */
+  .nav_links li { /* To order 'nav' tab */
     display: flex;
     align-items: flex-start;
     float: left;
