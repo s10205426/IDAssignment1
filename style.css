@@ -422,15 +422,7 @@ button:hover {
 
 ul{list-style: none;} /* To remove the dot */
 
-.profile_bg {
-  background-color: rgb(180, 173, 107);
-  border-radius: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-}
-
-.flex_container {
+.flex_container { /* To order 'About Me' tab */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,10 +433,30 @@ ul{list-style: none;} /* To remove the dot */
   text-align: center;
 }
 
+.flex_container2 { /* To order 'Education' tab */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 125px;
+  margin-left: 125px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .flex_item {
   margin-top: 40px;
   margin-right: 20px;
   margin-left: 20px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex_item2 {
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
   font-size: 20px;
   text-align: center;
 }
@@ -454,6 +466,23 @@ hr.border { /* border */
   border-radius: 13px;
   margin-left: 90px;
   margin-right: 90px;
+}
+
+.profile_bg {
+  background-color: grey;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1145px) { /* fit mobile devices */
+  .flex_item2 {
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 576px) { /* fit mobile devices */
@@ -476,6 +505,18 @@ hr.border { /* border */
     text-align: center;
   }
 }
+@media only screen and (max-width: 576px) { /* fit mobile devices */
+  .flex_container2 { /* To order 'Education' tab */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 576px) { /* fit mobile devices */
   .nav_links li {
@@ -486,5 +527,3 @@ hr.border { /* border */
     transition: all 0.3s ease 0s;
   }
 }
-
-
